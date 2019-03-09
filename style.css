@@ -1,19 +1,16 @@
 :root{
+  --clock: #BDBDBD;
   --local: #2196F3;
   --local-face-morning: #F5F5F5;
   --local-face-night: #263238;
-  --local-morning: #BDBDBD;
-  --local-night: #616161;
   --tpe: #F4511E;
   --tpe-face-morning: #E0E0E0;
   --tpe-face-night: #313C42;
-  --tpe-morning: #CACACA;
-  --tpe-night: #838383;
 }
 
-/* html{
-  background-color: #9E9E9E;
-} */
+html{
+  background-color: white;
+}
 
 .main {
     /* display: flex; */
@@ -51,20 +48,16 @@ h1 {
   fill: var(--tpe);
 }
 
+.clock{
+  fill: var(--clock);
+}
+
 .local-face-morning{
   fill: var(--local-face-morning);
 }
 
 .local-face-night{
   fill: var(--local-face-night);
-}
-
-.local-morning{
-  fill: var(--local-morning);
-}
-
-.local-night{
-  fill: var(--local-night);
 }
 
 .tpe-face-morning{
@@ -75,20 +68,9 @@ h1 {
   fill: var(--tpe-face-night);
 }
 
-.tpe-morning{
-  fill: var(--tpe-morning);
-}
-
-.tpe-night{
-  fill: var(--tpe-night);
-}
-
-
-
 .hide{
   fill: none;
 }
-
 
 .sizing-box {
   fill: none;
