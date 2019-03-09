@@ -68,13 +68,13 @@ var interval = setInterval(timeDisplay, 60000);
 // TPEFACE.style.opacity = tpeFaceOpacity;
 
 // if local hour is great than 6:00 and less than 18:00
-if(6 < localHr && localHr < 18){
+if(6 <= localHr && localHr < 18){
   //display sun
   LOCALSUN.classList.remove("hide");
-  LOCALSUN.classList.add("local-morning");
+  LOCALSUN.classList.add("local");
 
   //hide moon
-  LOCALMOON.classList.remove("local-night");
+  LOCALMOON.classList.remove("local");
   LOCALMOON.classList.add("hide");
 
   //display morning face color
@@ -82,12 +82,12 @@ if(6 < localHr && localHr < 18){
   LOCALFACE.classList.add("local-face-morning");
 } else { //night time
   //hide sun
-  LOCALSUN.classList.remove("local-morning");
+  LOCALSUN.classList.remove("local");
   LOCALSUN.classList.add("hide");
 
   //display moon
   LOCALMOON.classList.remove("hide");
-  LOCALMOON.classList.add("local-night");
+  LOCALMOON.classList.add("local");
 
   //display night color
   LOCALFACE.classList.remove("local-face-morning");
@@ -96,21 +96,21 @@ if(6 < localHr && localHr < 18){
 
 
 
-if(6 < tpeHr && tpeHr < 18){
+if(6 <= tpeHr && tpeHr < 18){
   TPESUN.classList.remove("hide");
-  TPESUN.classList.add("tpe-morning");
+  TPESUN.classList.add("tpe");
 
-  TPEMOON.classList.remove("tpe-night");
+  TPEMOON.classList.remove("tpe");
   TPEMOON.classList.add("hide");
 
   TPEFACE.classList.remove("tpe-face-night");
   TPEFACE.classList.add("tpe-face-morning");
 } else{
-  TPESUN.classList.remove("tpe-morning");
+  TPESUN.classList.remove("tpe");
   TPESUN.classList.add("hide");
 
   TPEMOON.classList.remove("hide");
-  TPEMOON.classList.add("tpe-night");
+  TPEMOON.classList.add("tpe");
 
   TPEFACE.classList.remove("tpe-face-morning");
   TPEFACE.classList.add("tpe-face-night");
